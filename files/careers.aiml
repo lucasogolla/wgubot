@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>networkspecialistgo</pattern>
+        <template>
+            <button>
+                <text>
+                    WGU Network Specialist
+                </text>
+                <url>https://www.wgu.edu/career-guide/network-administration-information-technology-security-bachelors-program.html</url>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>softwaredevgo</pattern>
+        <template>
+            <button>
+                <text>
+                    WGU Software Development
+                </text>
+                <url>https://www.wgu.edu/online-it-degrees/software-development-bachelors-program.html</url>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>networksecuritygo</pattern>
+        <template>
+            <button>
+                <text>
+                    WGU Network Security
+                </text>
+                <url>https://www.wgu.edu/online-it-degrees/network-administration-information-technology-security-bachelors-program.html</url>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>databasego</pattern>
+        <template>
+            <button>
+                <text>
+                    WGU Data Management
+                </text>
+                <url>https://www.wgu.edu/online-it-degrees/data-management-analytics-bachelors-program.html</url>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>webdevgo</pattern>
+        <template>
+            <button>
+                <text>
+                    WGU Computer Science and Web Development
+                </text>
+                <url>https://www.wgu.edu/online-it-degrees/computer-science.html</url>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>wgutechcareersgo</pattern>
+        <template>
+            <button>
+                <text>
+                    WGU IT Careers and Degrees
+                </text>
+                <url>https://www.wgu.edu/online-it-degrees.html</url>
+            </button>
+        </template>
+    </category>
+</aiml>

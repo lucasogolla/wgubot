@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <category><pattern>Help</pattern><template><srai>Career Bot</srai></template></category>
+    <category><pattern>Bot</pattern><template><srai>Career Bot</srai></template></category>
+    <category><pattern>Careers</pattern><template><srai>Career Bot</srai></template></category>
+    <category><pattern>Career Bot</pattern><template><srai>Career Bot</srai></template></category>
+    <category><pattern>begin</pattern><template><srai>Career Bot</srai></template></category>
+    <category><pattern>hello</pattern><template><srai>Career Bot</srai></template></category>
+    <category><pattern>hi</pattern><template><srai>Career Bot</srai></template></category>
+
+    <category>
+        <pattern>Career Bot</pattern>
+        <template>
+        Would you like to learn what career path suits you through a series of 
+        questions or a menu? <br/>Type Menu or Questions to choose, or click on
+        one of the following options.
+        <button>
+            <text>
+                Careers Menu
+            </text>
+            <postback>CareerMenu</postback>
+        </button>
+        <button>
+            <text>
+                Questions
+            </text>
+            <postback>CareerQuestions</postback>
+        </button>
+        </template>
+    </category>
+    <category><pattern>Questions</pattern><template><srai>CareerQuestions</srai></template></category>
+    <category><pattern>The questions</pattern><template><srai>CareerQuestions</srai></template></category>
+    <category><pattern>Q</pattern><template><srai>CareerQuestions</srai></template></category>
+
+    <category> 
+        <pattern>CareerQuestions</pattern>
+        <template>
+            Do you enjoy programming or working with networks more?
+            <button>
+                <text>Programming</text>
+                <postback>ProgrammingQuestion1</postback>
+            </button>
+            <button>
+                <text>Hardware</text>
+                <postback>NetworkQuestion1</postback>
+            </button>
+        </template>
+	</category>
+    <category> 
+        <pattern>ProgrammingQuestion1</pattern>
+        <template>
+            Would you rather program applications for the web or program applications for the desktop?
+            <button>
+                <text>Web</text>
+                <postback>webdevgo</postback>
+            </button>
+            <button>
+                <text>Hardware</text>
+                <postback>softwaredevgo</postback>
+            </button>
+            <button>
+                <text>Neither</text>
+                <postback>NetworkQuestion1</postback>
+            </button>
+        </template>
+	</category>
+    <category> 
+        <pattern>NetworkQuestion1</pattern>
+        <template>
+            Do you enjoy working with databases or would you prefer network design/security?
+            <button>
+                <text>Databases</text>
+                <postback>databasego</postback>
+            </button>
+            <button>
+                <text>Networking</text>
+                <postback>NetworkQuestion2</postback>
+            </button>
+            <button>
+                <text>Neither</text>
+                <postback>wgutechcareersgo</postback>
+            </button>
+        </template>
+	</category>
+    <category> 
+        <pattern>NetworkQuestion2</pattern>
+        <template>
+            Does setting up and maintaining a network more or less interesting than network security?
+            <button>
+                <text>More</text>
+                <postback>networkspecialistgo</postback>
+            </button>
+            <button>
+                <text>Less</text>
+                <postback>networksecuritygo</postback>
+            </button>
+            <button>
+                <text>Neither are interesting</text>
+                <postback>wgutechcareersgo</postback>
+            </button>
+        </template>
+	</category>
+
+    <category><pattern>Menu</pattern><template><srai>CareerMenu</srai></template></category>
+    <category><pattern>The menu</pattern><template><srai>CareerMenu</srai></template></category>
+    <category><pattern>M</pattern><template><srai>CareerMenu</srai></template></category>
+
+    <category>
+        <pattern>CareerMenu</pattern>
+        <template>
+        Learn more about:
+        <br/><br/>
+        <button>
+            <text>
+                1: Computer Network Specialist
+            </text>
+            <postback>networkspecialistgo</postback>
+        </button>
+        <button>
+            <text>
+                2: Software Developer<br/>
+            </text>
+            <postback>softwaredevgo</postback>
+        </button>
+        <button>
+            <text>
+                3: Cyber Security Specialist<br/>
+            </text>
+            <postback>networksecuritygo</postback>
+        </button>
+        <button>
+            <text>
+                4: Database Administrator<br/>
+            </text>
+            <postback>databasego</postback>
+        </button>
+        <button>
+            <text>
+                5: Web Developer<br/>
+            </text>
+            <postback>webdevgo</postback>
+        </button>
+        </template>
+	</category>
+</aiml>
